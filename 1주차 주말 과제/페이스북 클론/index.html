@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - 로그인 또는 가입</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="sorting">
+          <div id="main_title">
+            <a href="https://www.facebook.com" title="Facebook 홈으로 이동"
+              ><i class="title_img"></i
+            ></a>
+          </div>
+          <div id="main_login">
+            <form action="#" method="post">
+              <table>
+                <tr>
+                  <td class="login_text">이메일 또는 휴대폰</td>
+                  <td class="login_text">비밀번호</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="email" />
+                  </td>
+                  <td>
+                    <input type="password" name="password" />
+                  </td>
+                  <td>
+                    <input value="로그인" type="submit" id="button" />
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="login_help">
+                    <a
+                      href="https://www.facebook.com/recover/initiate?lwv=110&ars=royal_blue_bar"
+                      >계정을 잊으셨나요?</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </header>
+      <section class="sorting">
+        <div class="section_left">
+          <div id="main_intro">
+            Facebook에서 전세계에 있는 친구, 가족, 지인들과 함께 이야기를
+            나눠보세요
+          </div>
+          <div id="main_picture">
+            <img src="./main.png" alt="페이스북 그림" class="main_img" />
+          </div>
+        </div>
+        <div class="section_right">
+          <div id="sign_up">
+            <div class="sign_up_title">
+              <div id="sign_up_title1">
+                가입하기
+              </div>
+              <div id="sign_up_title2">
+                빠르고 쉽습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="sorting">
+        <div id="language">사용언어</div>
+        <div id="option">기능</div>
+        <div id="version">버전</div>
+      </footer>
+    </div>
+    <script>
+      document.querySelector("#button").addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
