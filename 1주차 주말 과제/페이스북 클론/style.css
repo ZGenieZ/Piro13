@@ -4,9 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 900px;
+}
+
 .container {
   background: linear-gradient(to bottom, white, #d3d8e8);
-  min-width: 1300px;
+  min-height: 690px;
 }
 
 header {
@@ -68,11 +72,11 @@ a {
 }
 
 input {
-  width: 180px;
-  height: 25px;
-  border: 1px solid #ccd0d5;
+  width: 150px;
+  height: 20px;
+  border: 1px solid black;
   margin-top: 3px;
-  margin-right: 15px;
+  margin-right: 13px;
 }
 
 input:focus {
@@ -81,13 +85,14 @@ input:focus {
 }
 
 #button {
-  width: 60px;
+  width: 50px;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   background-color: #4267b2;
   border-color: #29487d;
   color: white;
-  height: 25px;
+  height: 20px;
+  cursor: pointer;
 }
 
 #button:hover {
@@ -97,6 +102,7 @@ input:focus {
   display: inline-block;
   margin-right: 15px;
   width: 565px;
+  height: 500px;
 }
 
 #main_intro {
@@ -135,4 +141,281 @@ input:focus {
   color: #1d2129;
   font-size: 19px;
   font-weight: normal;
+}
+
+.sign_up_input {
+  font-size: 18px;
+  padding: 8px 10px;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 0;
+  width: 384px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.sign_up_input:focus {
+  padding: 8px 10px;
+}
+
+.sign_up_name input {
+  width: 187px;
+}
+
+.sign_up_name input:last-child {
+  margin-left: 5px;
+}
+
+.sign_up_birthday_wrap {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#sign_up_birthday_title {
+  margin-bottom: 5px;
+}
+
+#sign_up_birthday_title span,
+#sign_up_gender_title span {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#sign_up_birthday_date {
+  overflow: hidden;
+  width: 200px;
+  float: left;
+}
+
+select {
+  border: 1px solid #ccd0d5;
+  font-size: 13px;
+  height: 30px;
+  padding: 5px;
+}
+
+.select_year,
+.select_month {
+  display: inline-block;
+  float: left;
+}
+.select_day {
+  display: inline-block;
+}
+
+.birthday_help,
+.gender_help {
+  display: inline-block;
+}
+
+.birthday_help a,
+.gender_help a {
+  display: inline-block;
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
+  background-position: 0 -198px;
+  background-image: url("./icons2.png");
+  background-size: 58px 216px;
+  background-repeat: no-repeat;
+}
+
+.birthday_help span {
+  visibility: hidden;
+}
+
+.sign_up_gender_wrap {
+  margin-top: 10px;
+}
+
+#sign_up_gender_title {
+  margin-bottom: 5px;
+}
+
+#female,
+#male,
+#option {
+  margin: 3px 5px 0px 5px;
+  width: 13px;
+  height: 19px;
+}
+
+.gender_name {
+  color: #1d2129;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+}
+
+.gender_help span {
+  visibility: hidden;
+}
+
+.sign_up_caution p {
+  margin-top: 15px;
+  color: #777;
+  font-size: 11px;
+  width: 316px;
+}
+
+.sign_up_caution p a {
+  color: #385898;
+  cursor: pointer;
+}
+
+.sign_up_caution p a:hover {
+  text-decoration: underline;
+}
+
+.sign_up_button {
+  margin-top: 20px;
+}
+
+#submit_button {
+  font-size: 19px;
+  font-weight: bold;
+  min-width: 194px;
+  padding: 7px 20px;
+
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 1px;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#submit_button:hover {
+  background: linear-gradient(#65b950, #578843);
+}
+
+.sign_up_advice {
+  color: #666;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.sign_up_advice a {
+  color: #385898;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sign_up_advice a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 980px;
+}
+
+#language ul {
+  overflow: hidden;
+  margin-left: -5px;
+}
+#language li {
+  list-style: none;
+  float: left;
+  padding-left: 10px;
+  font-size: 12px;
+  color: #737373;
+}
+
+#language li a {
+  color: #385898;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#language li a:hover {
+  text-decoration: underline;
+}
+
+#language li:last-child a {
+  display: inline-block;
+  border: 1px solid #ccd0d5;
+  width: 28px;
+  height: 20px;
+  color: #4b4f56;
+  padding: 1px 8px 1px 7px;
+  background-color: #f5f6f7;
+  border-radius: 2px;
+}
+
+#language li:last-child a p {
+  width: 12px;
+  height: 12px;
+  background-image: url(./icons3.png);
+  background-size: 54px 696px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-position: 0px -682px;
+}
+
+#language li:last-child a:hover {
+  background-color: rgb(241, 240, 240);
+}
+
+#divide_line {
+  border-bottom: 1px solid #dddfe2;
+  height: 8px;
+  margin-bottom: 8px;
+  min-width: 980px;
+}
+
+#option ul {
+  width: 1000px;
+  height: 68px;
+  margin-left: -20px;
+  overflow: hidden;
+}
+
+#option ul li {
+  list-style: none;
+  float: left;
+  padding-left: 20px;
+}
+
+#option ul li a {
+  display: inline-block;
+  color: #385898;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#option ul li a:hover {
+  text-decoration: underline;
+}
+
+#adIcon {
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  background-position: -36px -183px;
+  background-image: url(./icons.png);
+  background-size: 500px 204px;
+  background-repeat: no-repeat;
+}
+
+#version {
+  margin-top: 15px;
+  display: inline-block;
+  width: 133px;
+}
+
+#version span {
+  color: #737373;
+  font-size: 11px;
 }
